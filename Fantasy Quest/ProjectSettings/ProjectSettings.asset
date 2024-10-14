@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 63f51c493d524884f83b9d6b566ff154
+  productGUID: a75e8db8f1e89cd4cae9340d2fbf867d
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -471,43 +471,6 @@ PlayerSettings:
       m_Width: 36
       m_Height: 36
       m_Kind: 0
-      m_SubKind: 
-  - m_BuildTarget: tvOS
-    m_Icons:
-    - m_Textures: []
-      m_Width: 1280
-      m_Height: 768
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 800
-      m_Height: 480
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 400
-      m_Height: 240
-      m_Kind: 0
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 4640
-      m_Height: 1440
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 2320
-      m_Height: 720
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 3840
-      m_Height: 1440
-      m_Kind: 1
-      m_SubKind: 
-    - m_Textures: []
-      m_Width: 1920
-      m_Height: 720
-      m_Kind: 1
       m_SubKind: 
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -979,10 +942,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: e8c3172a-e298-4a37-a00f-6b79c8404cb2
+  cloudProjectId: f64d771f-313e-48eb-903b-458cafb7e7e9
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Fantasy Quest
+  projectName: Fantasy Quest 2024-10-14_22-02-41
   organizationId: joshuaevans674
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
