@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class controlsetting : MonoBehaviour
 {
+    public string bruh;
     public void joystickselect()
     {
         PlayerPrefs.SetString("control", "joysticks");
