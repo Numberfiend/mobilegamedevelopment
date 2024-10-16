@@ -31,6 +31,7 @@ public class touchdetection : MonoBehaviour
 
     public void OnFadeComplete()
     {
+   
         SceneManager.LoadScene("MainMenu");
     }
 }

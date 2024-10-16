@@ -34,7 +34,11 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 083668e8e932b3f489d8cd86c6df65da
+    name: music
+  - guid: 048133e133cfd5f4f94570e6ef399894
+    name: sound
   m_AudioMixerGroupViews:
   - guids:
     - 79733871d1b1ae548a4a7700475281b8
@@ -53,6 +57,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 79733871d1b1ae548a4a7700475281b8
   m_Children:
+  - {fileID: -2646862692515597319}
   - {fileID: 7417961349403354414}
   m_Volume: 80465d9305ed6c04391ddd90d1f0322e
   m_Pitch: 0b3d48feb6d943844a79d623316c190c
@@ -125,8 +130,7 @@ AudioMixerGroupController:
   m_Name: BGM
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 032f0429d7cc5894da7e7233cf337941
-  m_Children:
-  - {fileID: -2646862692515597319}
+  m_Children: []
   m_Volume: 083668e8e932b3f489d8cd86c6df65da
   m_Pitch: f3841b66ff7a6b4498d6898000194fde
   m_Send: 00000000000000000000000000000000
