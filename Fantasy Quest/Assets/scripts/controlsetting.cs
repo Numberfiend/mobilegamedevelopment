@@ -17,4 +17,7 @@ public class controlsetting : MonoBehaviour
     {
         PlayerPrefs.SetString("control", "touch");
     }
+
+    
+    
 }
