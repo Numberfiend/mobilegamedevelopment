@@ -21,7 +21,7 @@ public class touchdetection : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 Debug.Log("Touch detected at position: " + touch.position);
-                
+                vibration.Vibrate(5000);
                 animator.SetTrigger("FadeOut");
              
                 
@@ -31,6 +31,7 @@ public class touchdetection : MonoBehaviour
 
     public void OnFadeComplete()
     {
+        
    
         SceneManager.LoadScene("MainMenu");
     }

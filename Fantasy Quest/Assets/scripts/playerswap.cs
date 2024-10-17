@@ -13,6 +13,7 @@ public class playerswap : MonoBehaviour
     void Start()
     {
         controlcheck = PlayerPrefs.GetString("control");
+        
 
         if (controlcheck == "joysticks")
         {
