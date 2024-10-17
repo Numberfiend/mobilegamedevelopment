@@ -7,7 +7,7 @@ public class joystickmovement : MonoBehaviour
 {
 
     Vector2 movevector;
-    public float movespeed = 1f;
+    public float movespeed = 5f;
 
     public void InputPlayer(InputAction.CallbackContext _context)
     {
