@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CandyCoded.HapticFeedback;
 public class turnmanage : MonoBehaviour
 {
     public Slider healthbar;
@@ -47,6 +48,7 @@ public class turnmanage : MonoBehaviour
         enemyanim.SetBool("enemyattack", true);
         PlayerPrefs.SetString("turn", "player");
         yield return new WaitForSeconds(3.7f);
+        HapticFeedback.HeavyFeedback();
         takedamage();
         enemyanim.SetBool("enemyattack", false);
 

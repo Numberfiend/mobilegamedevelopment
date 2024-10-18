@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
+using CandyCoded.HapticFeedback;
 public class startanims : MonoBehaviour
 {
     public Slider healthbar;
@@ -42,6 +43,7 @@ public class startanims : MonoBehaviour
         playeranim.SetBool("canattack", true);
         PlayerPrefs.SetString("turn", "enemy");
         yield return new WaitForSeconds(1.833f);
+        HapticFeedback.LightFeedback();
         takedamage();
         playeranim.SetBool("canattack", false);
         

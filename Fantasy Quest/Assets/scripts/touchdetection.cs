@@ -26,7 +26,7 @@ public class touchdetection : MonoBehaviour
                 if(bruh == 0)
                 {
                     Debug.Log("we vibrating");
-                    HapticFeedback.HeavyFeedback();
+                    HapticFeedback.MediumFeedback();
                 }
                 
                 animator.SetTrigger("FadeOut");
