@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using CandyCoded.HapticFeedback;
 
 public class touchdetection : MonoBehaviour
 {
     public Animator animator;
-    
+    public int bruh = 0;
+
     void Start()
-    {
+    { 
 
     }
 
@@ -21,7 +23,12 @@ public class touchdetection : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 Debug.Log("Touch detected at position: " + touch.position);
-                vibration.Vibrate(5000);
+                if(bruh == 0)
+                {
+                    Debug.Log("we vibrating");
+                    HapticFeedback.HeavyFeedback();
+                }
+                
                 animator.SetTrigger("FadeOut");
              
                 

@@ -1,21 +1,14 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 public class joystickmovement : MonoBehaviour
 {
 
     Vector2 movevector;
     public float movespeed = 5f;
-
-    public void Start()
-    {
-        Vector2 move = new Vector2(movevector.x, movevector.y);
-        move.Normalize();
-        transform.Translate(movespeed * move * Time.deltaTime);
-    }
+    public Rigidbody rb;
 
     public void InputPlayer(InputAction.CallbackContext _context)
     {
@@ -29,4 +22,19 @@ public class joystickmovement : MonoBehaviour
         move.Normalize();
         transform.Translate(movespeed * move * Time.deltaTime);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.CompareTag("levelintro"))
+        {
+            Debug.Log("Collided with: " + collision.gameObject.name);
+            SceneManager.LoadScene("RandomBattleMap");
+
+        }
+        
+    }
 }
+
+
+
