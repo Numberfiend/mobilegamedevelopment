@@ -44,6 +44,7 @@ public class startanims : MonoBehaviour
         PlayerPrefs.SetString("turn", "enemy");
         yield return new WaitForSeconds(1.833f);
         HapticFeedback.LightFeedback();
+        Handheld.Vibrate();
         takedamage();
         playeranim.SetBool("canattack", false);
         

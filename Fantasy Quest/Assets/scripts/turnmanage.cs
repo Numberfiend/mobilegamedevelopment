@@ -49,6 +49,7 @@ public class turnmanage : MonoBehaviour
         PlayerPrefs.SetString("turn", "player");
         yield return new WaitForSeconds(3.7f);
         HapticFeedback.HeavyFeedback();
+        Handheld.Vibrate();
         takedamage();
         enemyanim.SetBool("enemyattack", false);
 

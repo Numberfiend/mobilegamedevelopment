@@ -26,6 +26,7 @@ public class touchdetection : MonoBehaviour
                 if(bruh == 0)
                 {
                     Debug.Log("we vibrating");
+                    Handheld.Vibrate();
                     HapticFeedback.MediumFeedback();
                 }
                 
