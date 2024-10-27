@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using CandyCoded.HapticFeedback;
 
 public class touchdetection : MonoBehaviour
 {
@@ -27,7 +26,6 @@ public class touchdetection : MonoBehaviour
                 {
                     Debug.Log("we vibrating");
                     Handheld.Vibrate();
-                    HapticFeedback.MediumFeedback();
                 }
                 
                 animator.SetTrigger("FadeOut");
