@@ -15,6 +15,11 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
             : _androidAdUnitId;
     }
 
+    public void Start()
+    {
+        LoadAd();
+        ShowAd();
+    }
     // Load content to the Ad Unit:
     public void LoadAd()
     {

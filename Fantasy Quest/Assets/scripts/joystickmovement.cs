@@ -1,3 +1,4 @@
+using GooglePlayGames.BasicApi;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class joystickmovement : MonoBehaviour
 {
+  
 
     Vector2 movevector;
     public float movespeed = 5f;
@@ -23,15 +25,18 @@ public class joystickmovement : MonoBehaviour
     }
     private void Update()
     {
-       
-       Vector2 move = new Vector2(movevector.x, movevector.y);
-       move.Normalize();
-       transform.Translate(movespeed * move * Time.deltaTime);
-       gyro.transform.Translate(movespeed * move * Time.deltaTime);
+
+        Vector2 move = new Vector2(movevector.x, movevector.y);
+        move.Normalize();
+        transform.Translate(movespeed * move * Time.deltaTime);
+        
+        gyro.transform.Translate(movespeed * move * Time.deltaTime);
 
         UpdateAnimations(move);
     }
 
+    
+    
     private void UpdateAnimations(Vector2 move)
     {
         if (joystickanim != null)
@@ -50,13 +55,35 @@ public class joystickmovement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.CompareTag("levelintro"))
+        if (collision.gameObject.CompareTag("level1"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
             SceneManager.LoadScene("RandomBattleMap");
 
         }
-        
+
+        if (collision.gameObject.CompareTag("level2"))
+        {
+            Debug.Log("Collided with: " + collision.gameObject.name);
+            SceneManager.LoadScene("RandomBattleMap");
+
+        }
+
+        if (collision.gameObject.CompareTag("level3"))
+        {
+            Debug.Log("Collided with: " + collision.gameObject.name);
+            SceneManager.LoadScene("RandomBattleMap");
+
+        }
+
+        if (collision.gameObject.CompareTag("level4"))
+        {
+            Debug.Log("Collided with: " + collision.gameObject.name);
+            SceneManager.LoadScene("RandomBattleMap");
+
+        }
+
+
     }
 }
 
