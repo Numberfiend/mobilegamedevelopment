@@ -25,19 +25,19 @@ public class joystickmovement : MonoBehaviour
         
     }
 
-    void FixedUpdate()
-    {
+    //void FixedUpdate()
+    //{
         
-       if (movementjoystick.joystickVec.y != 0)
-       {
-          rb.velocity = new Vector3(movementjoystick.joystickVec.x * movespeed, movementjoystick.joystickVec.y * movespeed, 0);
-       }
-       else
-       {
-        rb.velocity = Vector3.zero;
-       }
+    //   if (movementjoystick.joystickVec.y != 0)
+    //   {
+    //      rb.velocity = new Vector3(movementjoystick.joystickVec.x * movespeed, movementjoystick.joystickVec.y * movespeed, 0);
+    //   }
+    //   else
+    //   {
+    //    rb.velocity = Vector3.zero;
+    //   }
         
-    }
+    //}
     private void Update()
     {
 
