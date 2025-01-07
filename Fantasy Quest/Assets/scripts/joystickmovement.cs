@@ -6,14 +6,15 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 public class joystickmovement : MonoBehaviour
 {
-  
 
+    public MovementJoystick movementjoystick;
     Vector2 movevector;
     public float movespeed = 5f;
     public Rigidbody rb;
     public Transform gyro;
     private string controlcheck;
     public Animator joystickanim;
+   
     public void InputPlayer(InputAction.CallbackContext _context)
     {
         movevector = _context.ReadValue<Vector2>();
@@ -21,6 +22,20 @@ public class joystickmovement : MonoBehaviour
     }
     public void Start()
     {
+        
+    }
+
+    void FixedUpdate()
+    {
+        
+       if (movementjoystick.joystickVec.y != 0)
+       {
+          rb.velocity = new Vector3(movementjoystick.joystickVec.x * movespeed, movementjoystick.joystickVec.y * movespeed, 0);
+       }
+       else
+       {
+        rb.velocity = Vector3.zero;
+       }
         
     }
     private void Update()
