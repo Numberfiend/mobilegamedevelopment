@@ -5,7 +5,7 @@ public class playerswap : MonoBehaviour
 {
     public GameObject joystickplayer;
     public GameObject gyroplayer;
-    public GameObject touchplayer;
+
     private string controlcheck;
     // Start is called before the first frame update
     void Start()
@@ -17,25 +17,25 @@ public class playerswap : MonoBehaviour
         {
             joystickplayer.SetActive(true);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(false);
+         
         }
         else if (controlcheck == "gyro")
         {
             joystickplayer.SetActive(false);
             gyroplayer.SetActive(true);
-            touchplayer.SetActive(false);
+           
         }
         else if (controlcheck == "touch")
         {
             joystickplayer.SetActive(false);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(true);
+           
         }
         else
         {
             joystickplayer.SetActive(true);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(false);
+       
         }
     }
 
@@ -53,25 +53,25 @@ public class playerswap : MonoBehaviour
         {
             joystickplayer.SetActive(true);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(false);
+           
         }
         else if (controlcheck == "gyro")
         {
             joystickplayer.SetActive(false);
             gyroplayer.SetActive(true);
-            touchplayer.SetActive(false);
+          
         }
         else if (controlcheck == "touch")
         {
             joystickplayer.SetActive(false);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(true);
+           
         }
         else
         {
             joystickplayer.SetActive(true);
             gyroplayer.SetActive(false);
-            touchplayer.SetActive(false);
+       
         }
     }
 
