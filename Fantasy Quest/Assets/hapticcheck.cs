@@ -37,7 +37,7 @@ public class hapticcheck : MonoBehaviour
         if(PlayerPrefs.GetInt("haptics") == 1)
         {
             Debug.Log("VIBRATEEEEEEE");
-            HapticFeedback.LightFeedback();
+            HapticFeedback.MediumFeedback();
         }
     }
 }

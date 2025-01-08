@@ -9,6 +9,7 @@ public class controlsetting : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("haptics") == 1)
         {
+            Debug.Log("we vibrating");
             HapticFeedback.LightFeedback();
         }
         PlayerPrefs.SetString("control", "joysticks");
