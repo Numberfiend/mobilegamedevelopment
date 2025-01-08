@@ -912,6 +912,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 758226920}
+        m_TargetAssemblyTypeName: hapticcheck, Assembly-CSharp
+        m_MethodName: hapticscheck
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &259824638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2272,9 +2284,12 @@ MonoBehaviour:
   bosshealth: {fileID: 1627585421}
   attackbutton: {fileID: 957569672}
   magicbutton: {fileID: 1676554294}
+  slash: {fileID: 1954052591}
+  cast: {fileID: 1937979522}
   particleEffect: {fileID: 1364868501}
   meleedefence: 5
   magicdefence: 5
+  rng: 6
 --- !u!114 &758226922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4324,6 +4339,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!82 &1937979522 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4099229345992267710, guid: 0d67c09aaa5c14f4b8a5f1674c9c3f22, type: 3}
+  m_PrefabInstance: {fileID: 2026507243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1954052591 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1442709022501188686, guid: 0d67c09aaa5c14f4b8a5f1674c9c3f22, type: 3}
+  m_PrefabInstance: {fileID: 2026507243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2026507243
 PrefabInstance:
   m_ObjectHideFlags: 0

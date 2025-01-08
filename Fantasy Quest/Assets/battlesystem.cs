@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using CandyCoded.HapticFeedback;
 
 
 public class battlesystem : MonoBehaviour
@@ -13,11 +14,16 @@ public class battlesystem : MonoBehaviour
     public Slider bosshealth;
     public GameObject attackbutton;
     public GameObject magicbutton;
+    public AudioSource slash;
+    public AudioSource cast;
     public ParticleSystem particleEffect;
     [SerializeField]
-    public int meleedefence = 5;
-    public int magicdefence = 5;
+    public int meleedefence = 10;
+    public int magicdefence = 10;
+    [SerializeField]
+    public int rng = 6;
     
+
 
     public void melee()
     {
@@ -39,14 +45,38 @@ public class battlesystem : MonoBehaviour
 
     IEnumerator attackwait()
     {
+        slash.Play();
         yield return new WaitForSeconds(1.833f);
-        bosshealth.value -= 10;
+        int randomcheck = rngen();
+        if(randomcheck >= rng)
+        {
+            Critvibrate();
+            Debug.Log("CRITCALHITTTTT");
+            bosshealth.value -= 20;
+        }
+        else
+        {
+            bosshealth.value -= (20 - meleedefence);
+        }
+        
         player.SetBool("isAttacking", false);
     }
     IEnumerator magicwait()
     {
-        yield return new WaitForSeconds(1.833f);
-        bosshealth.value -= 10;
+        cast.Play();
+        yield return new WaitForSeconds(4.8f);
+        int randomcheck = rngen();
+        if(randomcheck >= rng)
+        {
+            Critvibrate();
+            Debug.Log("CRITICALLLL HIT");
+            bosshealth.value -= 20;
+        }
+        else
+        {
+            bosshealth.value -= (20 - magicdefence);
+        }
+        
         player.SetBool("isCasting", false);
     }
     IEnumerator vfxwait()
@@ -56,6 +86,19 @@ public class battlesystem : MonoBehaviour
         particleEffect.Stop();
     }
 
+    int rngen()
+    {
+        return Random.Range(0, 10);
+    }
+
+    void Critvibrate()
+    {
+        if (PlayerPrefs.GetInt("haptics") == 1)
+        {
+          
+            HapticFeedback.HeavyFeedback();
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -67,8 +110,7 @@ public class battlesystem : MonoBehaviour
     {
         if(bosshealth.value <= 0) 
         {
-            
-            SceneManager.LoadScene("youwin");
+            SceneManager.LoadScene("winscreen");
         }
     }
 }

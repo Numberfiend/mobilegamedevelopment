@@ -40,4 +40,6 @@ public class hapticcheck : MonoBehaviour
             HapticFeedback.MediumFeedback();
         }
     }
+
+    
 }

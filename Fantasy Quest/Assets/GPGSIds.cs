@@ -24,11 +24,14 @@
 
 public static class GPGSIds
 {
+        public const string achievement_let_the_battles_begin = "CgkI_J-eqbEYEAIQAg"; // <GPGSID>
+        public const string achievement_testincremental = "CgkI_J-eqbEYEAIQCA"; // <GPGSID>
+        public const string achievement_hitting_it_off = "CgkI_J-eqbEYEAIQAw"; // <GPGSID>
+        public const string achievement_magical_mayhem = "CgkI_J-eqbEYEAIQBA"; // <GPGSID>
         public const string leaderboard_leaders = "CgkI_J-eqbEYEAIQBQ"; // <GPGSID>
-        public const string achievement_toincrement = "CgkI_J-eqbEYEAIQAw"; // <GPGSID>
-        public const string achievement_tounlock = "CgkI_J-eqbEYEAIQAg"; // <GPGSID>
-        public const string achievement_toreveal = "CgkI_J-eqbEYEAIQAQ"; // <GPGSID>
-        public const string achievement_hiddenincremental = "CgkI_J-eqbEYEAIQBA"; // <GPGSID>
+        public const string achievement_the_start_of_an_adventure = "CgkI_J-eqbEYEAIQAQ"; // <GPGSID>
+        public const string achievement_is_the_best_offence = "CgkI_J-eqbEYEAIQBg"; // <GPGSID>
+        public const string achievement_testachievements = "CgkI_J-eqbEYEAIQBw"; // <GPGSID>
 
 }
 

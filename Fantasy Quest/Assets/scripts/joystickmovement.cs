@@ -73,7 +73,7 @@ public class joystickmovement : MonoBehaviour
         if (collision.gameObject.CompareTag("level1"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
-            SceneManager.LoadScene("RandomBattleMap");
+            SceneManager.LoadScene("level1");
 
         }
 

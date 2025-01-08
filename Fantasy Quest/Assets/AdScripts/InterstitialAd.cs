@@ -17,8 +17,8 @@ public class InterstitialAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsSho
 
     public void Start()
     {
-        LoadAd();
-        ShowAd();
+        //LoadAd();
+        //ShowAd();
     }
     // Load content to the Ad Unit:
     public void LoadAd()
