@@ -22,6 +22,14 @@ public class achievmentpopup : MonoBehaviour
         
     }
 
+    public void displayLeaders()
+    {
+        if (PlayGamesPlatform.Instance.IsAuthenticated())
+        {
+            PlayGamesPlatform.Instance.ShowLeaderboardUI();
+        }
+    }
+
     public void unlockAchiev()
     {
         if (PlayGamesPlatform.Instance.IsAuthenticated())

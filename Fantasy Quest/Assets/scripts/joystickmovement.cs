@@ -73,6 +73,7 @@ public class joystickmovement : MonoBehaviour
         if (collision.gameObject.CompareTag("level1"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
+            PlayerPrefs.SetString("level", "level1");
             SceneManager.LoadScene("level1");
 
         }
@@ -80,21 +81,24 @@ public class joystickmovement : MonoBehaviour
         if (collision.gameObject.CompareTag("level2"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
-            SceneManager.LoadScene("RandomBattleMap");
+            PlayerPrefs.SetString("level", "level2");
+            SceneManager.LoadScene("level2");
 
         }
 
         if (collision.gameObject.CompareTag("level3"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
-            SceneManager.LoadScene("RandomBattleMap");
+            PlayerPrefs.SetString("level", "level3");
+            SceneManager.LoadScene("level3");
 
         }
 
         if (collision.gameObject.CompareTag("level4"))
         {
             Debug.Log("Collided with: " + collision.gameObject.name);
-            SceneManager.LoadScene("RandomBattleMap");
+            PlayerPrefs.SetString("level", "level4");
+            SceneManager.LoadScene("level4");
 
         }
 
