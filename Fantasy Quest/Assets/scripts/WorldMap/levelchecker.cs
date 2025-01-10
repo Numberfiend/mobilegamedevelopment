@@ -17,7 +17,10 @@ public class levelchecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //PlayerPrefs.SetInt("level1state", 0);
+        //PlayerPrefs.SetInt("level2state", 0);
+        //PlayerPrefs.SetInt("level3state", 0);
+        //PlayerPrefs.SetInt("level4state", 0);
         int level1state = PlayerPrefs.GetInt("level1state");
         int level2state = PlayerPrefs.GetInt("level2state");
         int level3state = PlayerPrefs.GetInt("level3state");
