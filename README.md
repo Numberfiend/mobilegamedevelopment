@@ -11,6 +11,13 @@ mobile_Joshua_22153027-------------------->APKsAndABBs----------------->(This is
                       -------------------->ProjectFiles---------------->(The folder labelled "fantasyquest" is the project folder in there)
                       -------------------->ReadMe---------------------->(where a copy of this github readme is)
                       -------------------->Video----------------------->(This is where the MP4 file is)
+**Level Resetting**
+If you need to reset the levels to play again since ther is no automatic way to atm please either A just open up the levels scene and press play or find the level checker script and copy and paste this code into the start function:
+PlayerPrefs.SetInt("level1state", 0);
+PlayerPrefs.SetInt("level2state", 0);
+PlayerPrefs.SetInt("level3state", 0);
+PlayerPrefs.SetInt("level4state", 0);
+
                       
 **Set**
 This is a game set in the fictional land of Auroran. Gelathar (That's you) has set out on a quest to become the worlds strongest swordsman and you must aid him in his quest to defeat all the enemies in your way
